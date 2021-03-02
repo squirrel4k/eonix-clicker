@@ -1,19 +1,10 @@
 import React from 'react';
+import Counter from '../containers/CounterContainer'
 
-function Home({
-  onIncrement,
-  onDecrement,
-  counter,
-}) {
+function Home() {
   return (
     <div>
-      <p>Vous avez cliqué {counter} fois</p>
-      <button onClick={onDecrement} disabled={counter === 0} >
-        -
-      </button>
-      <button onClick={onIncrement}>
-        +
-      </button>
+      <Counter/>
     </div>
   );
 };
